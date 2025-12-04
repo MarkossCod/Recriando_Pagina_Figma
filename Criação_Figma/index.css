@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #ffffff;
+}
+
+/* ======= Container principal ======= */
+
+.hero {
+    width: 100%;
+    padding: 80px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ======= Texto ======= */
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    color: #1d1f2e;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 17px;
+    color: #414141;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* ======= Botão ======= */
+
+.btn {
+    display: inline-block;
+    background: #ff6b6b;
+    color: white;
+    padding: 16px 28px;
+    border-radius: 6px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff4c4c;
+}
+
+/* ======= Imagem ======= */
+
+.hero-img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid #e8f4fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ===== Pagina02 ===== */
+.formacoes {
+    background: #eaf3f8;
+    padding: 60px 10%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo-sec {
+    font-size: 28px;
+    color: #1d1f2e;
+    margin-bottom: 30px;
+}
+
+/* ===== CARDS CONTAINER ===== */
+
+.cards-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* ===== CARD ===== */
+
+.card {
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 12px;
+    width: 48%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    font-size: 24px;
+    color: #1d1f2e;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+/* ===== INFO LINE ===== */
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #5b5b5b;
+    margin-bottom: 20px;
+}
+
+.divider {
+    width: 1px;
+    height: 14px;
+    background: #b8b8b8;
+}
+
+/* ===== DESCRIPTION ===== */
+
+.card p {
+    color: #444;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media (max-width: 800px) {
+    .card {
+        width: 100%;
+    }
+}
+
+/*====== Pagina 3 e 4 =========*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  color: #1d1f2e;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Titles ===== */
+.sec-title {
+  font-size: 22px;
+  margin: 40px 10% 20px;
+  color: #1d1f2e;
+}
+
+/* ===== Section Experiencias ===== */
+.experiencias {
+  padding: 0 10%;
+}
+
+/* Cards horizontais de experiência */
+.exp-card {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+  align-items: flex-start;
+}
+
+.exp-img {
+  width: 220px;
+  height: 130px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.exp-content {
+  flex: 1;
+}
+
+.exp-content h3 {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #1d1f2e;
+}
+
+.exp-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  color: #667085;
+  font-size: 14px;
+}
+
+.year-badge {
+  background-color: #344054;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  min-width: 48px;
+  text-align: center;
+}
+
+.year-badge.alt {
+  background-color: #cbd5e1;
+  color: #475569;
+}
+
+.category {
+  font-weight: 500;
+}
+
+/* Texto do parágrafo */
+.exp-content p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #1d1f2e;
+}
+
+/* Linha separadora entre cards */
+.exp-card:not(:last-child) {
+  border-bottom: 1px solid #e4e7ec;
+  padding-bottom: 24px;
+}
+
+/* ===== Section Skills ===== */
+.skills {
+  background-color: #eaf3f8;
+  padding: 40px 10%;
+  margin-top: 60px;
+}
+
+.skills-container {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Cartões de skills */
+.skill-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  width: 48%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.skill-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 16px;
+  object-fit: contain;
+}
+
+.skill-card h3 {
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #1d1f2e;
+}
+
+.skill-card p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 700px) {
+  .exp-card {
+    flex-direction: column;
+  }
+
+  .exp-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+  }
+
+  .skill-card {
+    width: 100%;
+  }
+}
+/*--- footer/creditos finais--*/
+.footer {
+    text-align: center;
+    padding: 40px 0;
+    background: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.social-icons {
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+.social-icons img {
+    width: 40px; /* ajuste conforme o tamanho que quiser */
+    filter: brightness(0) saturate(100%) invert(12%) sepia(10%) saturate(600%)
+            hue-rotate(210deg) brightness(95%) contrast(90%);
+    /* filtro para deixar o ícone no tom azul da imagem */
+}
+
+.copy {
+    font-size: 14px;
+    color: #1d2033;
+}
